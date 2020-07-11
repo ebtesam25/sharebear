@@ -129,28 +129,30 @@ const styles = StyleSheet.create({
     height:'100%',
     position:'relative',
     backgroundColor: '#FFF4F4',
-    fontFamily: 'Futura',
+    
   },
   header:{
-    height:'35%',
+    height:200,
     width:'100%',
     resizeMode: 'contain',
     position:'absolute',
-    top:'-15%',
+    top:-70,
+    zIndex:2,
   },
   mode:{
-    height:'35%',
+    
     width:'100%',
     resizeMode: 'contain',
     position:'absolute',
-    top:'-5%',
+    top:40,
+    zIndex:2,
   },
   modeSelect:{
     fontSize:30,
     position:'absolute',
-    top:'10%',
+    top:'11%',
     left:'15%',
-    zIndex:3,
+    zIndex:4,
     color:'transparent',
   },
   

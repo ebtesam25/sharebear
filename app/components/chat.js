@@ -24,7 +24,7 @@ export default class Chat extends Component {
         text: `Hey there! I'm ShareBear.\nWhat's up?`,
         createdAt: new Date(),
         user: BOT_USER,
-        image: 'https://facebook.github.io/react/img/logo_og.png',
+        image: 'https://images-na.ssl-images-amazon.com/images/I/71Iq8vTLPeL._SY355_.png',
       }
     ],
     fontsLoaded: false,
@@ -117,7 +117,7 @@ export default class Chat extends Component {
           }}
           renderBubble={this.renderBubble}
           timeTextStyle={{ left: { color: '#fff' },right: { color:'#fff'} }}
-          messagesContainerStyle={{padding:'5 5 5 5'}}
+          
           
         />
       </View>
@@ -132,28 +132,30 @@ const styles = StyleSheet.create({
     height:'100%',
     position:'relative',
     backgroundColor: '#FFF4F4',
-    fontFamily: 'Futura',
+    
   },
   header:{
-    height:'35%',
+    height:200,
     width:'100%',
     resizeMode: 'contain',
     position:'absolute',
-    top:'-15%',
+    top:-70,
+    zIndex:2,
   },
   mode:{
-    height:'35%',
+    
     width:'100%',
     resizeMode: 'contain',
     position:'absolute',
-    top:'-5%',
+    top:40,
+    zIndex:2,
   },
   modeSelect:{
     fontSize:30,
     position:'absolute',
-    top:'10%',
+    top:'11%',
     right:'15%',
-    zIndex:3,
+    zIndex:4,
     color:'transparent',
   },
   
