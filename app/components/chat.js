@@ -1,13 +1,14 @@
 import React, { useState, useCallback, useEffect, Component } from 'react'
-import { StyleSheet, Text, View, Image} from 'react-native';
-import { AppLoading } from 'expo';
-import { GiftedChat, Bubble } from 'react-native-gifted-chat'
+import { StyleSheet, Text, View, Image, Button} from 'react-native';
 
+import { GiftedChat, Bubble, Send } from 'react-native-gifted-chat'
+import { Dialogflow_V2 } from 'react-native-dialogflow';
+import { dialogflowConfig } from '../env';
 
-let customFonts  = {
-  'Avenir': require('../assets/fonts/Avenir.ttf'),
-  'Futura': require('../assets/fonts/Futura.ttf'),
-};
+import * as ImagePicker from 'expo-image-picker';
+import Constants from 'expo-constants';
+import * as Permissions from 'expo-permissions';
+
 
 
 const BOT_USER = {
@@ -18,26 +19,69 @@ const BOT_USER = {
 
 export default class Chat extends Component {
   state = {
+    image: null,
     messages: [
       {
         _id: 1,
         text: `Hey there! I'm ShareBear.\nWhat's up?`,
         createdAt: new Date(),
-        user: BOT_USER,
-        image: 'https://images-na.ssl-images-amazon.com/images/I/71Iq8vTLPeL._SY355_.png',
+        user: BOT_USER
       }
     ],
-    fontsLoaded: false,
+  
   };
 
-  async _loadFontsAsync() {
-    await Font.loadAsync(customFonts);
-    this.setState({ fontsLoaded: true });
+  
+  componentDidMount() {
+    
+    this.getPermissionAsync();
+    Dialogflow_V2.setConfiguration(
+      dialogflowConfig.client_email,
+      dialogflowConfig.private_key,
+      Dialogflow_V2.LANG_ENGLISH_US,
+      dialogflowConfig.project_id
+    );
   }
 
-  componentDidMount() {
-    this._loadFontsAsync();
-  }
+  getPermissionAsync = async () => {
+    if (Constants.platform.ios) {
+      const { status } = await Permissions.askAsync(Permissions.CAMERA_ROLL);
+      if (status !== 'granted') {
+        alert('Sorry, we need camera roll permission to make this work!');
+      }
+    }
+  };
+
+  _pickImage = async () => {
+    try {
+      let result = await ImagePicker.launchImageLibraryAsync({
+        mediaTypes: ImagePicker.MediaTypeOptions.All,
+        allowsEditing: true,
+        aspect: [4, 3],
+        quality: 1,
+      });
+      if (!result.cancelled) {
+        this.setState({ image: result.uri });
+      }
+
+      console.log(result);
+    } catch (E) {
+      console.log(E);
+    }
+  };
+
+  renderSend(props) {
+    return (
+        <Send
+            {...props}
+        >
+            <View style={{marginRight: 10, marginBottom: 5}}>
+                <Image source={require('../assets/images/send.png')} />
+            </View>
+        </Send>
+    );
+};
+
 
   renderBubble(props) {
     return (
@@ -68,24 +112,37 @@ export default class Chat extends Component {
   
 
   handleGoogleResponse(result) {
-    let text = result[0].title;
+    let text = result.queryResult.fulfillmentMessages[0].text.text[0];
     this.sendBotResponse(text);
   }
 
-  onSend(messages = []) {
+  onSend(messages = [], image) {
+    image=this.state.image;
+    console.log(this.state.image);
+    const msg = {
+      ...messages[0],
+      image
+    };
     this.setState(previousState => ({
-      messages: GiftedChat.append(previousState.messages, messages)
+      messages: GiftedChat.append(previousState.messages, msg)
     }));
 
     let message = messages[0].text;
 
-    fetch('https://reactnative.dev/movies.json')
+    
+    Dialogflow_V2.requestQuery(
+      message,
+      result => this.handleGoogleResponse(result),
+      error => console.log(error)
+    );
+
+   /*} fetch('https://reactnative.dev/movies.json')
       .then((response) => response.json())
       .then((json) => {
         this.setState({ data: json.movies });
         this.handleGoogleResponse(json.movies),
         console.log(this.state.data);
-      })
+      })*/
    
   }
 
@@ -106,19 +163,22 @@ export default class Chat extends Component {
     
     return (
       <View style={styles.container}>
-        <Image source={require('../assets/images/sarcastic.png')} style={styles.mode}></Image>
+        
         <Text style={styles.modeSelect} onPress={()=>this.props.navigation.navigate('Serious')}>Serious</Text>
         <Image source={require('../assets/images/header.png')} style={styles.header}></Image>
+        <Image source={require('../assets/images/image.png')} style={styles.image}></Image>
+        <Text onPress={this._pickImage} style={{position:'absolute',zIndex:6,bottom:10,right:50, fontSize:20, color:'transparent'}} >"PICK"</Text>
         <GiftedChat
+          
           messages={this.state.messages}
           onSend={messages => this.onSend(messages)}
           user={{
             _id: 1
           }}
           renderBubble={this.renderBubble}
-          timeTextStyle={{ left: { color: '#fff' },right: { color:'#fff'} }}
-          
-          
+          isTyping
+          alwaysShowSend 
+          renderSend={this.renderSend}
         />
       </View>
     );
@@ -158,6 +218,14 @@ const styles = StyleSheet.create({
     zIndex:4,
     color:'transparent',
   },
+  image:{
+    
+    resizeMode: 'contain',
+    position:'absolute',
+    bottom:6,
+    right:50,
+    zIndex:5,
+  }
   
 });
 
