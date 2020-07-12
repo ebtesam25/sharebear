@@ -28,6 +28,8 @@ def results():
     speak_output = ""
     if intent == "GetCivicIssueIntent":
         speak_output = GetCivicIssueIntentHandler(req)
+    elif intent == "GetAdviceIntent":
+        speak_output = GetAdviceIntent()
     elif intent ==  "GetCovidStatsIntent":
         speak_output = GetCovidStatsIntentHandler(req)
     elif intent == "GetIssueTopicsIntent":
@@ -38,6 +40,8 @@ def results():
         speak_output = unknownIntent
     # return a fulfillment response
     return {'fulfillmentText': '{fulfillmentText}'.format(fulfillmentText=speak_output)}
+def GetAdviceIntent():
+    return requests.get('https://api.adviceslip.com/advice').json()['slip']['advice']
 
 def GetCovidStatsIntentHandler(req):
     city = getparamvalue('geo-city', req)
