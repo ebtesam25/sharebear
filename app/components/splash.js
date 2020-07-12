@@ -27,7 +27,7 @@ export default class Splash extends React.Component  {
     return (
     <View style={styles.container}>
       <Image source={require('../assets/images/splash.png')} style={styles.header}></Image>
-      
+      <Text style={{position:'absolute',zIndex:3,fontSize:100,top:50,left:'20%', color:'transparent'}} onPress={()=>this.props.navigation.navigate('Chat')}>NEXT</Text>
     </View>
     );
     }
@@ -40,12 +40,11 @@ export default class Splash extends React.Component  {
 const styles = StyleSheet.create({
   container: {
     height:'100%',
-    position:'relative',
-    backgroundColor: '#8a91f9',
+    backgroundColor:'#63466e'
     
   },
   header:{
-    height:'50%',
+    height:'100%',
     width:'100%',
   },
   
