@@ -1,0 +1,474 @@
+[
+  {
+    "id": "3b41dfb6-c28d-48de-b13c-023c3d1e3d9c",
+    "data": [
+      {
+        "text": "topic",
+        "alias": "topic",
+        "meta": "@issueSubjects",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "449d8bdd-b881-457c-a3d6-8f5c8bb1e6e9",
+    "data": [
+      {
+        "text": "i want to hear about ",
+        "userDefined": false
+      },
+      {
+        "text": "topic",
+        "alias": "topic",
+        "meta": "@issueSubjects",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d72be9eb-033e-40bc-8a43-9580ef9dab89",
+    "data": [
+      {
+        "text": "tell me about ",
+        "userDefined": false
+      },
+      {
+        "text": "topic",
+        "alias": "topic",
+        "meta": "@issueSubjects",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4ec3c227-5179-41bc-8d3b-33ade7ca504d",
+    "data": [
+      {
+        "text": "i want to know more about ",
+        "userDefined": false
+      },
+      {
+        "text": "topic",
+        "alias": "topic",
+        "meta": "@issueSubjects",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "96189222-c218-4ae0-812f-1d14cbb0e39e",
+    "data": [
+      {
+        "text": "i do want to know more about ",
+        "userDefined": false
+      },
+      {
+        "text": "topic",
+        "alias": "topic",
+        "meta": "@issueSubjects",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5c98bce7-6151-4b48-8d40-20b8cc09029f",
+    "data": [
+      {
+        "text": "Yes! I want to hear about some bills about ",
+        "userDefined": false
+      },
+      {
+        "text": "topic",
+        "alias": "topic",
+        "meta": "@issueSubjects",
+        "userDefined": true
+      },
+      {
+        "text": " currently in congress",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c6893809-1382-4089-818a-972781433001",
+    "data": [
+      {
+        "text": "what\u0027s a civic issue about ",
+        "userDefined": false
+      },
+      {
+        "text": "topic",
+        "alias": "topic",
+        "meta": "@issueSubjects",
+        "userDefined": true
+      },
+      {
+        "text": " I should know",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6bb0acd6-f2f9-4a52-a749-4e29146fe908",
+    "data": [
+      {
+        "text": "share a civic issue about ",
+        "userDefined": false
+      },
+      {
+        "text": "topic",
+        "alias": "topic",
+        "meta": "@issueSubjects",
+        "userDefined": true
+      },
+      {
+        "text": " with me",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a6c39e91-2c96-4e0e-a0a5-6b42270d9e56",
+    "data": [
+      {
+        "text": "tell me about a civic issue about ",
+        "userDefined": false
+      },
+      {
+        "text": "topic",
+        "alias": "topic",
+        "meta": "@issueSubjects",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "50335bdd-843e-484e-bebe-ccbebe900a9d",
+    "data": [
+      {
+        "text": "tell me about a legislation about ",
+        "userDefined": false
+      },
+      {
+        "text": "topic",
+        "alias": "topic",
+        "meta": "@issueSubjects",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e7b667be-b46d-43c4-98c6-2448120efe6b",
+    "data": [
+      {
+        "text": "tell me about any legislation",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "67c34066-835b-4171-87c9-4052a7944c70",
+    "data": [
+      {
+        "text": "tell me about any bill",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7295e577-1712-4b9a-b64c-e58072315905",
+    "data": [
+      {
+        "text": "yes tell me more",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ab364bf8-1586-4f4a-8bc6-03af55c77e45",
+    "data": [
+      {
+        "text": "i want to hear about some bills",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "28630eba-751e-493e-9742-738eb0fe7feb",
+    "data": [
+      {
+        "text": "tell me about a bill",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "64dbf84a-178b-431e-a19e-a4a1270d8d9a",
+    "data": [
+      {
+        "text": "tell me more",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5dff0f38-86e8-4a2a-8f28-accff6e8c4a0",
+    "data": [
+      {
+        "text": "what are some current issues",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5a6663bb-9328-455b-bfad-9e24ce404a7b",
+    "data": [
+      {
+        "text": "tell me about any legislation about ",
+        "userDefined": false
+      },
+      {
+        "text": "topic",
+        "alias": "topic",
+        "meta": "@issueSubjects",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0f934e20-bd54-4938-a7b9-48f3004bcb1a",
+    "data": [
+      {
+        "text": "tell me about any bill about ",
+        "userDefined": false
+      },
+      {
+        "text": "topic",
+        "alias": "topic",
+        "meta": "@issueSubjects",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "2ca54259-728b-4016-8173-d74632c533c0",
+    "data": [
+      {
+        "text": "tell me about a bill about ",
+        "userDefined": false
+      },
+      {
+        "text": "topic",
+        "alias": "topic",
+        "meta": "@issueSubjects",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "73fff25d-e656-4963-9e0f-7e4c2b615631",
+    "data": [
+      {
+        "text": "Tell me about a current issue",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "796e67f2-7240-4a43-a83a-5c1856dc564a",
+    "data": [
+      {
+        "text": "What are some bills I should know about",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ee8b4dc9-4b7f-4757-af62-3b0bb89d47a1",
+    "data": [
+      {
+        "text": "What is a legislation that I should know about",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "fb57c0f9-293b-4ef9-9b73-4eedea447e26",
+    "data": [
+      {
+        "text": "What is a legislation about ",
+        "userDefined": false
+      },
+      {
+        "text": "topic",
+        "alias": "topic",
+        "meta": "@issueSubjects",
+        "userDefined": true
+      },
+      {
+        "text": " I should know about",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7a546ba9-4b6d-45cb-8dd7-aff3146ddfed",
+    "data": [
+      {
+        "text": "What are some bills about ",
+        "userDefined": false
+      },
+      {
+        "text": "topic",
+        "alias": "topic",
+        "meta": "@issueSubjects",
+        "userDefined": true
+      },
+      {
+        "text": " I should know about",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f22d8349-ddcb-4ce3-8721-62a4c74c84f8",
+    "data": [
+      {
+        "text": "Tell me about a current issue about ",
+        "userDefined": false
+      },
+      {
+        "text": "topic",
+        "alias": "topic",
+        "meta": "@issueSubjects",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d2fcb070-7317-4f31-ac82-dfc043bc32a6",
+    "data": [
+      {
+        "text": "What is a current issue about ",
+        "userDefined": false
+      },
+      {
+        "text": "topic",
+        "alias": "topic",
+        "meta": "@issueSubjects",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b16b7184-2a9d-4afc-979f-e86b5168adcd",
+    "data": [
+      {
+        "text": "What are some current issues about ",
+        "userDefined": false
+      },
+      {
+        "text": "topic",
+        "alias": "topic",
+        "meta": "@issueSubjects",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

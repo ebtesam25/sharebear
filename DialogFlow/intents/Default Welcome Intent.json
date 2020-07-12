@@ -1,0 +1,41 @@
+{
+  "id": "e964b177-46dd-4d6b-84de-23ec472e2fcd",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "How are you doing? Did you know that calling members of Congress is the most effective way to have your voice heard? Let me know if you want to hear about about some bills currently in Congress.",
+            "How can I help you? Did you know that calling members of Congress is the most effective way to have your voice heard? Let me know if you want to hear about about some bills currently in Congress.",
+            "What can I do for you today? Did you know that calling members of Congress is the most effective way to have your voice heard? Let me know if you want to hear about about some bills currently in Congress.",
+            "How can I assist? Did you know that calling members of Congress is the most effective way to have your voice heard? Let me know if you want to hear about about some bills currently in Congress."
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

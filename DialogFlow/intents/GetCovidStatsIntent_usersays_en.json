@@ -1,0 +1,68 @@
+[
+  {
+    "id": "ccc21b1c-7874-4495-a933-ac867661bb09",
+    "data": [
+      {
+        "text": "covid stats",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "85b45d21-bb29-4b66-994c-ba935136724f",
+    "data": [
+      {
+        "text": "What are the covid stats for ",
+        "userDefined": false
+      },
+      {
+        "text": "USA",
+        "alias": "geo-country",
+        "meta": "@sys.geo-country",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "50325f89-bfae-4be6-a24c-16342fe35777",
+    "data": [
+      {
+        "text": "What are the covid stats for ",
+        "userDefined": false
+      },
+      {
+        "text": "California",
+        "alias": "geo-state",
+        "meta": "@sys.geo-state",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c133bcbe-1609-488e-91b6-6ad0205f3227",
+    "data": [
+      {
+        "text": "What are the covid stats for ",
+        "userDefined": false
+      },
+      {
+        "text": "Los Angeles",
+        "alias": "geo-city",
+        "meta": "@sys.geo-city",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

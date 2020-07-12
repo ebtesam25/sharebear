@@ -1,0 +1,107 @@
+[
+  {
+    "id": "b2a4f7a5-de71-4316-9b31-3c41de106a5e",
+    "data": [
+      {
+        "text": "get issue topics",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3aaacb00-62be-421d-9b61-283fa1d6af2c",
+    "data": [
+      {
+        "text": "what are some issue topics",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e5036dd5-ab93-41d6-b8d2-7c434c42eee5",
+    "data": [
+      {
+        "text": "What are the types of bills available?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "851b36bd-8650-40ae-aff2-0a26886eee74",
+    "data": [
+      {
+        "text": "What are the types of issues?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "484952ca-1be5-4d08-837a-225d68a8eb77",
+    "data": [
+      {
+        "text": "What sort of legislation is there?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3aa0e858-1f4e-42c7-b901-59905ba4875e",
+    "data": [
+      {
+        "text": "What kind of bills are there?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a0d6f75d-10a6-42c0-852f-6c33300f8f23",
+    "data": [
+      {
+        "text": "What kind of issues are there?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e79320cd-5caa-46f0-8f47-f01711790fa0",
+    "data": [
+      {
+        "text": "What ",
+        "userDefined": false
+      },
+      {
+        "text": "topics",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " are availables?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]
